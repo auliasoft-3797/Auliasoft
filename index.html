@@ -610,21 +610,156 @@
   </div>
 </section>
 
-<section id="target" style="padding: 7rem 5%; background: var(--bg2);">
-  <div style="max-width: 1200px; margin: auto;">
-    <div style="text-align: center; margin-bottom: 3.5rem;">
-      <div class="section-label">Target Audience</div>
-      <h2>Cocok untuk<br>Berbagai Bisnis</h2>
-      <p class="section-desc" style="margin: 0 auto;">Solusi kami dirancang untuk semua jenis usaha di Indonesia, dari UMKM hingga perusahaan skala menengah.</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem;">
-      <div class="target-card"><span class="target-emoji">🏢</span><div class="target-title">Koperasi</div><div class="target-desc">Sistem pencatatan keuangan, anggota, dan transaksi yang rapi dan terkomputerisasi.</div></div>
-      <div class="target-card"><span class="target-emoji">📦</span><div class="target-title">UMKM / UKM</div><div class="target-desc">Kelola penjualan, stok, dan laporan keuangan agar lebih efisien.</div></div>
-      <div class="target-card"><span class="target-emoji">🏭</span><div class="target-title">Perusahaan</div><div class="target-desc">Sistem bisnis terintegrasi untuk perusahaan skala kecil hingga menengah.</div></div>
-      <div class="target-card"><span class="target-emoji">🛒</span><div class="target-title">Toko Retail</div><div class="target-desc">Kasir modern untuk minimarket dan warung dengan pencatatan stok otomatis.</div></div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuliaSoft – Target Audience</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #000; font-family: Arial, sans-serif; }
+
+    #target-audience {
+      background: #0f0f0f;
+      padding: 5rem 2rem;
+    }
+
+    .ta-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .ta-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #00e5a0;
+      margin-bottom: 1.25rem;
+    }
+    .ta-label::before,
+    .ta-label::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: #00e5a0;
+    }
+
+    .ta-title {
+      font-size: clamp(28px, 4vw, 52px);
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      margin: 0 0 0.6rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+    }
+
+    .ta-sub {
+      font-size: 15px;
+      color: #777;
+      text-align: center;
+      margin: 0 0 3rem;
+    }
+
+    .ta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .ta-card {
+      background: #1c1c1e;
+      border-radius: 16px;
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ta-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      border-radius: 0 0 16px 16px;
+    }
+    .ta-card.c1::after { background: #378ADD; }
+    .ta-card.c2::after { background: #00e5a0; }
+    .ta-card.c3::after { background: #f59e0b; }
+    .ta-card.c4::after { background: #7c6af7; }
+
+    .ta-icon {
+      font-size: 46px;
+      margin-bottom: 1.1rem;
+      line-height: 1;
+    }
+
+    .ta-card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    .ta-card-text {
+      font-size: 13.5px;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .ta-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<section id="target-audience">
+  <div class="ta-inner">
+    <div class="ta-label">TARGET AUDIENCE</div>
+    <h2 class="ta-title">Target Audience</h2>
+    <p class="ta-sub">Solusi kami dirancang untuk berbagai jenis bisnis di Indonesia</p>
+
+    <div class="ta-grid">
+
+      <div class="ta-card c1">
+        <div class="ta-icon">🏢</div>
+        <p class="ta-card-title">Koperasi</p>
+        <p class="ta-card-text">Cocok untuk koperasi simpan pinjam maupun koperasi serba usaha yang membutuhkan sistem pencatatan keuangan, anggota, dan transaksi yang lebih rapi, cepat, dan terkomputerisasi.</p>
+      </div>
+
+      <div class="ta-card c2">
+        <div class="ta-icon">📦</div>
+        <p class="ta-card-title">UMKM / UKM</p>
+        <p class="ta-card-text">Membantu pelaku usaha kecil dan menengah dalam mengelola penjualan, stok barang, laporan keuangan, serta operasional bisnis agar lebih efisien dan tidak manual lagi.</p>
+      </div>
+
+      <div class="ta-card c3">
+        <div class="ta-icon">🏭</div>
+        <p class="ta-card-title">Perusahaan</p>
+        <p class="ta-card-text">Solusi sistem bisnis yang dapat digunakan oleh perusahaan skala kecil hingga menengah untuk mengelola transaksi, laporan keuangan, dan manajemen operasional secara terintegrasi.</p>
+      </div>
+
+      <div class="ta-card c4">
+        <div class="ta-icon">🛒</div>
+        <p class="ta-card-title">Toko Retail</p>
+        <p class="ta-card-text">Sistem kasir modern untuk toko retail, minimarket, dan warung yang membutuhkan proses transaksi cepat, pencatatan stok otomatis, dan laporan penjualan harian.</p>
+      </div>
+
     </div>
   </div>
 </section>
+
+</body>
+</html>
 
 <!-- TESTIMONI DARK MODE -->
 <section id="testimoni" style="background: #0f0f0f; padding: 80px 40px; font-family: 'DM Sans', sans-serif; color: #f0ede6; box-sizing: border-box;">
@@ -1187,79 +1322,388 @@
 </section>
 
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuliaSoft POS – Product Roadmap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #000; font-family: Arial, sans-serif; }
+
+    #roadmap {
+      background: #0f0f0f;
+      padding: 5rem 2rem;
+    }
+
+    .roadmap-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .roadmap-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #00e5a0;
+      margin-bottom: 1.25rem;
+    }
+    .roadmap-label::before,
+    .roadmap-label::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: #00e5a0;
+    }
+
+    .roadmap-title {
+      font-size: clamp(32px, 5vw, 60px);
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      margin: 0 0 0.75rem;
+      line-height: 1.1;
+      font-family: 'Arial Black', Arial, sans-serif;
+    }
+
+    .roadmap-sub {
+      font-size: 15px;
+      color: #777;
+      text-align: center;
+      margin: 0 0 3rem;
+    }
+
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .road-card {
+      background: #1c1c1e;
+      border-radius: 16px;
+      padding: 1.8rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .road-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      border-radius: 0 0 16px 16px;
+    }
+    .road-card.basic::after   { background: #378ADD; }
+    .road-card.standar::after { background: #7c6af7; }
+    .road-card.premium::after { background: #f59e0b; }
+
+    .road-icon { font-size: 32px; margin-bottom: 1rem; line-height: 1; }
+
+    .road-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .badge-basic   { background: #0C447C; color: #85B7EB; }
+    .badge-standar { background: #3C3489; color: #AFA9EC; }
+    .badge-premium { background: #633806; color: #FAC775; }
+
+    .road-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .road-sub   { font-size: 12px; color: #666; margin-bottom: 1rem; line-height: 1.5; }
+
+    .road-divider { border: none; border-top: 1px solid #2a2a2a; margin: 0 0 1rem; }
+
+    .road-feats { list-style: none; flex: 1; }
+    .road-feats li {
+      display: flex;
+      gap: 8px;
+      font-size: 12.5px;
+      color: #888;
+      padding: 5px 0;
+      border-bottom: 1px solid #222;
+      line-height: 1.45;
+    }
+    .road-feats li:last-child { border-bottom: none; }
+
+    .feat-icon { flex-shrink: 0; margin-top: 2px; font-size: 14px; }
+    .basic   .feat-icon { color: #378ADD; }
+    .standar .feat-icon { color: #7c6af7; }
+    .premium .feat-icon { color: #f59e0b; }
+
+    .feat-main { color: #ccc; }
+    .feat-sub  { display: block; font-size: 11px; color: #555; margin-top: 2px; }
+
+    @media (max-width: 768px) {
+      .roadmap-grid { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 480px) and (max-width: 768px) {
+      .roadmap-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
 <section id="roadmap">
   <div class="roadmap-inner">
-    <div class="roadmap-header">
-      <div class="section-label">Product Roadmap</div>
-      <h2>Jalur Pengembangan<br>AuliaSoft POS</h2>
-      <p class="section-desc">Dari digitalisasi dasar hingga sistem bisnis yang canggih dan teranalisis.</p>
-    </div>
-    <div class="roadmap-timeline">
-      <div class="road-card"><div class="road-dot"></div><div class="road-version">Basic Version</div><div class="road-title">Fondasi Digital</div><div class="road-sub">Versi dasar untuk UMKM yang baru memulai</div><ul class="road-feats"><li>Sistem login pengguna</li><li>Manajemen produk sederhana</li><li>Transaksi penjualan (POS)</li><li>Cetak struk transaksi</li></ul></div>
-      <div class="road-card purple"><div class="road-dot purple"></div><div class="road-version purple">Standard Version</div><div class="road-title">Manajemen Bisnis</div><div class="road-sub">Fitur lebih lengkap untuk operasional yang berkembang</div><ul class="road-feats"><li>Manajemen stok barang</li><li>Pembelian & supplier</li><li>Laporan penjualan & pembelian</li><li>Multi user (admin & kasir)</li></ul></div>
-      <div class="road-card amber"><div class="road-dot amber"></div><div class="road-version amber">Premium Version</div><div class="road-title">Sistem Canggih</div><div class="road-sub">Solusi lengkap untuk bisnis yang membutuhkan analitik</div><ul class="road-feats"><li>Dashboard analitik bisnis</li><li>Laporan keuangan lengkap</li><li>Integrasi QRIS & transfer</li><li>Export laporan PDF & Excel</li></ul></div>
+    <div class="roadmap-label">PRODUCT ROADMAP</div>
+    <h2 class="roadmap-title">Jalur Pengembangan AuliaSoft POS</h2>
+    <p class="roadmap-sub">Dari digitalisasi dasar hingga sistem bisnis yang canggih dan teranalisis.</p>
+
+    <div class="roadmap-grid">
+
+      <!-- Basic -->
+      <div class="road-card basic">
+        <div class="road-icon">🏪</div>
+        <span class="road-badge badge-basic">Basic Version</span>
+        <p class="road-title">Fondasi Digital</p>
+        <p class="road-sub">Paket lengkap untuk toko dengan operasional sederhana dan kebutuhan kasir dasar.</p>
+        <hr class="road-divider">
+        <ul class="road-feats">
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Single Outlet</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Toko Online</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Aplikasi Kasir Online</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Manajemen Inventori</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">CRM</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Laporan Lengkap</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Manajemen Karyawan</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Pencatatan Keuangan <span class="feat-sub">Invoice, SO, DO</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Digital Payment (QRIS)</span></li>
+        </ul>
+      </div>
+
+      <!-- Standar -->
+      <div class="road-card standar">
+        <div class="road-icon">🏬</div>
+        <span class="road-badge badge-standar">Standard Version</span>
+        <p class="road-title">Manajemen Bisnis</p>
+        <p class="road-sub">Solusi lengkap dengan fitur lanjutan untuk bisnis multi outlet dan omnichannel.</p>
+        <hr class="road-divider">
+        <ul class="road-feats">
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Multi Outlet</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Toko Online</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Aplikasi Kasir Online <span class="feat-sub">Atur Meja, Multisatuan</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Manajemen Inventori <span class="feat-sub">COGS Average, Produksi Stok, Transfer Stok Antar Outlet</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">CRM (Deposit Pelanggan)</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Laporan Lengkap (Analisa Bisnis)</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Manajemen Karyawan <span class="feat-sub">Absensi Foto, Otorisasi Advance</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Akuntansi Lengkap <span class="feat-sub">Faktur, CoA, Auto Posting, Laporan Akuntansi</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Digital Payment <span class="feat-sub">QRIS Dynamic, EDC, Kartu Debit Kredit, Struk Digital</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Aplikasi Owner</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Order Online</span></li>
+        </ul>
+      </div>
+
+      <!-- Premium -->
+      <div class="road-card premium">
+        <div class="road-icon">🏢</div>
+        <span class="road-badge badge-premium">Premium Version</span>
+        <p class="road-title">Sistem Canggih</p>
+        <p class="road-sub">Paket enterprise dengan otomatisasi penuh untuk bisnis multi channel yang kompleks.</p>
+        <hr class="road-divider">
+        <ul class="road-feats">
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Multi Outlet</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Toko Online <span class="feat-sub">Website, Weborder, Shopee, Tokopedia, Grabmart, Multiakun Marketplace Omnichannel</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Aplikasi Kasir Online <span class="feat-sub">Atur Meja, Multisatuan, Reservasi, Leveling Komisi, Serial Number, Batch Number, Grosir</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Manajemen Inventori <span class="feat-sub">COGS Average, Serial Number, Batch Number, Permintaan Barang, Pengiriman Pembelian</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">CRM (Deposit Pelanggan)</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Laporan Lengkap (Analisa Bisnis)</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Manajemen Karyawan & Payroll <span class="feat-sub">Absensi, Shift Management, Struktur Gaji, Transfer Gaji</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Akuntansi Lengkap <span class="feat-sub">Faktur, CoA, Auto Posting, Laporan Akuntansi</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Digital Payment <span class="feat-sub">QRIS Dynamic, EDC, Kartu Debit Kredit, Struk Digital: WhatsApp, SMS, Email</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Aplikasi Owner</span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Order Online <span class="feat-sub">Weborder, QR Menu, Grabfood, Gofood</span></span></li>
+          <li><i class="ti ti-check feat-icon"></i><span class="feat-main">Aulia Teams <span class="feat-sub">Absensi Geolokasi, ePayslip, Shift, Integrasi Rekening Bank, Broadcast Pengumuman</span></span></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
 
+</body>
+</html>
 
-<!-- BUSINESS DOMAIN -->
-<section id="business-domain" style="padding: 7rem 5%; background: var(--bg);">
-  <div style="max-width: 1100px; margin: auto;">
 
-    <div style="text-align: center; margin-bottom: 4rem;">
-      <div class="section-label">Tentang Kami</div>
-      <h2>Business Domain</h2>
-      <p class="section-desc" style="margin: 0 auto;">Software bisnis digital untuk UMKM, koperasi, dan perusahaan</p>
-    </div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuliaSoft – Business Domain Sektor</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #000; font-family: Arial, sans-serif; }
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+    #business-domain {
+      background: #0f0f0f;
+      padding: 5rem 2rem;
+    }
 
-      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; transition: transform 0.25s, border-color 0.25s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(0,229,160,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="font-size: 1.8rem; margin-bottom: 1rem;">🏢</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:0.8rem;color:var(--text);">Apa itu AuliaSoft</div>
-        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">AuliaSoft adalah perusahaan teknologi yang mengembangkan sistem aplikasi bisnis untuk membantu digitalisasi usaha di Indonesia.</p>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);"></div>
+    .bd-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .bd-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #00e5a0;
+      margin-bottom: 1.25rem;
+    }
+    .bd-label::before,
+    .bd-label::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: #00e5a0;
+    }
+
+    .bd-title {
+      font-size: clamp(28px, 4vw, 52px);
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      margin: 0 0 3rem;
+      line-height: 1.1;
+      font-family: 'Arial Black', Arial, sans-serif;
+    }
+
+    .bd-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .bd-card {
+      background: #1c1c1e;
+      border-radius: 16px;
+      padding: 1.6rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bd-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      border-radius: 0 0 16px 16px;
+    }
+    .bd-card.c1::after { background: #378ADD; }
+    .bd-card.c2::after { background: #f59e0b; }
+    .bd-card.c3::after { background: #7c6af7; }
+    .bd-card.c4::after { background: #00e5a0; }
+
+    .bd-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 0.9rem;
+    }
+
+    .bd-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .ic1 { background: #0C447C; }
+    .ic2 { background: #633806; }
+    .ic3 { background: #3C3489; }
+    .ic4 { background: #085041; }
+
+    .bd-card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .bd-card-text {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 768px) {
+      .bd-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .bd-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<section id="business-domain">
+  <div class="bd-inner">
+    <div class="bd-label">BUSINESS DOMAIN</div>
+    <h2 class="bd-title">Digunakan pada Berbagai Sektor</h2>
+
+    <div class="bd-grid">
+
+      <div class="bd-card c1">
+        <div class="bd-top">
+          <div class="bd-icon-box ic1">🛒</div>
+          <p class="bd-card-title">Retail</p>
+        </div>
+        <p class="bd-card-text">Toko pakaian, sembako, elektronik, kosmetik, ATK</p>
       </div>
 
-      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; transition: transform 0.25s, border-color 0.25s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(0,229,160,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="font-size: 1.8rem; margin-bottom: 1rem;">💡</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:0.8rem;color:var(--text);">Bidang Utama</div>
-        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">POS (Point of Sales), Inventory Management, Accounting System, Customer &amp; Supplier, serta Reporting System.</p>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent2),transparent);"></div>
+      <div class="bd-card c2">
+        <div class="bd-top">
+          <div class="bd-icon-box ic2">🍽️</div>
+          <p class="bd-card-title">F&B</p>
+        </div>
+        <p class="bd-card-text">Restoran, kafe, warung makan, katering</p>
       </div>
 
-      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; transition: transform 0.25s, border-color 0.25s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(0,229,160,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="font-size: 1.8rem; margin-bottom: 1rem;">🎯</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:0.8rem;color:var(--text);">Target Pengguna</div>
-        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">Koperasi, UMKM/UKM, toko retail, minimarket, dan perusahaan skala kecil hingga menengah.</p>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent3),transparent);"></div>
+      <div class="bd-card c3">
+        <div class="bd-top">
+          <div class="bd-icon-box ic3">🔧</div>
+          <p class="bd-card-title">Jasa</p>
+        </div>
+        <p class="bd-card-text">Layanan teknis, salon, bengkel, asuransi</p>
       </div>
 
-      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; transition: transform 0.25s, border-color 0.25s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(0,229,160,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="font-size: 1.8rem; margin-bottom: 1rem;">🚀</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:0.8rem;color:var(--text);">Tujuan Sistem</div>
-        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">Membantu digitalisasi bisnis, mempermudah transaksi, pengelolaan stok, dan laporan keuangan otomatis.</p>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);"></div>
-      </div>
-
-      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; transition: transform 0.25s, border-color 0.25s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(0,229,160,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="font-size: 1.8rem; margin-bottom: 1rem;">☁️</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:0.8rem;color:var(--text);">Teknologi</div>
-        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">Sistem desktop berbasis Windows dengan dukungan cloud untuk monitoring dan laporan online.</p>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent2),transparent);"></div>
-      </div>
-
-      <div style="background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; transition: transform 0.25s, border-color 0.25s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(0,229,160,0.3)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="font-size: 1.8rem; margin-bottom: 1rem;">🔧</div>
-        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:0.8rem;color:var(--text);">Nilai Tambah</div>
-        <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;">All-in-one system, mudah digunakan, support teknis, dan bisa disesuaikan dengan kebutuhan bisnis.</p>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent3),transparent);"></div>
+      <div class="bd-card c4">
+        <div class="bd-top">
+          <div class="bd-icon-box ic4">📦</div>
+          <p class="bd-card-title">Grosir</p>
+        </div>
+        <p class="bd-card-text">Distributor, gudang, pedagang besar</p>
       </div>
 
     </div>
   </div>
 </section>
+
+</body>
+</html>
 
 
 
